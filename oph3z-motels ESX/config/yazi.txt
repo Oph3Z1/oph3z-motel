@@ -1,0 +1,108 @@
+﻿```
+Hoş geldiniz! Bugün sizlere benzersiz bir Motel Scripti'ni tanıtmaktan mutluluk duyuyorum. Motel Scripti, sunucunuzda gerçekçi ve etkileyici bir motel deneyimi sağlar. Bu script, oyuncularınıza lüks bir motel işletmecisi olma fırsatı sunar ve kapsamlı bir rol yapma deneyimi yaşatır. 
+
+Script, kullanıcı dostu arayüzü ve kolay entegrasyonu ile dikkat çeker. Motelinizi kişiselleştirmek için çeşitli seçenekler sunar. Odaları düzenleyebilir, fiyatlandırmaları ayarlayabilir ve müşterilerinize keyifli bir konaklama deneyimi sunabilirsiniz.
+
+
+
+
+Şimdi, Motel Scripti'ni kullanarak bir oda kiralama işlemini göstereceğiz. Şu anda motel sahibi bulunmamaktadır, bu yüzden bir müşteri olarak hareket edeceğiz. Rezervasyon masasına yaklaşalım.
+
+İşte boş motel lobisi. Burada birçok tür oda bulunuyor ve bu odalardan birini kiralayabilirsiniz.
+
+Benim için uygun bir oda seçmek istiyorum. Bu odalardan 1 numaralı odayı iki gün için kiralıyorum, 2 gün  için 560$ ödüyorum.
+ 
+
+Bu sefer motel sahibi var iken bir oda kiralama işlemini gösterelim. Bu sefer oda kiralamak için yapmamız gereken motel sahibi veya var ise motel çalışanları ile iletişime geçmemiz gerekmekte.
+
+/// arada gecen sesli ve yazılı sohbet 
+Müşteri: Merhaba, bir oda kiralamak istiyorum. Boş odalarınız var mı?
+
+Motel Sahibi: Elbette! Kaç gece konaklamak istiyorsunuz?
+
+Müşteri: Üç gün konaklamak istiyorum.
+
+Motel Sahibi: Harika! Size uygun bir oda bulabilirim. Hangi kategoriye ait bir oda arıyorsunuz? Lüks mü, standart mı?
+
+Müşteri: Lüks bir oda olmasını tercih ederim.
+
+Motel Sahibi: Anladım. Size en iyi hizmeti sunmak için elimden geleni yapacağım. Lüks odalarımızın fiyatları gecelik olarak belirlenmiştir. Size bu süre için en uygun fiyatı sunacağım.
+
+[Motel Sahibi, müşteriye boş lüks odaları ve fiyatlarını gösterir.]
+
+Müşteri: Anlaşmayı kabul eder.
+/// sohbet bitti 
+
+
+-- motel işletmesi satın alma
+
+
+Şimdi, ise nasıl bir motel bir işletmesi satın alabilirsiniz ona göstereceğiz. 
+
+Sol tarafta motel işletmesi hakkında bilgileri görebilirsiniz.
+
+
+O zaman şimdi patron neler yapabiliyor onlara gecelim.
+
+
+
+///PATRON NELER YAPIYOR 
+
+
+Patron menüsünü açtığımızda bizi Dashboard ekranı karşılıyor ve burada odaları hakkında bilgi alabilirsiniz, motel işlemlerinizi yapabilirsiniz.
+
+Employees Menu:
+Employees ekranın'da işletmenize yeni çalışanlar ekleyebilir, var olan çalışanlarının üzerinde düzenleme yapabilirsiniz.
+
+Company Menu:
+Company ekranın'da işletmenin para durumunu görebilir, ve para yatırıp cekebilirsiniz. 
+
+Customers Menu:
+Customers ekranın'da müşterilerin hakkında detaylı bilgilere erişebilirsiniz. Ve müşteriler üzerinde işlem yapabilirsiniz.
+
+Nearby Players: -- yapıldı
+Nearby Players ekranın'da yakınınızda ki oyuncuları görebilirsiniz ve bu oyunculara oda kiralıyabilirsiniz.
+Nasıl oda kiralıyabilirsiniz detaylıca görelim. Choose a Room kısmından bir oda seciyoruz. belirlediğimiz fiyatı ve saati giriyoruz.
+Onayladıktan sonra karşıdaki kişiye istek gidiyor ve eğer kişi kabul derse, artık motelin bir müşterisi oluyor.
+
+// Karşıya giden istek resmi videosu
+
+Motel Care: -- yapıldı
+Burada bir ücret karşılığında açılmamış odaları açabilirsin, odaları yükseltebilirsin.
+Ayrıca odaları yükseltirken, odanın duvarlarınıda değiştirebilirsin ve sağ tarafdan masalarda ve koltukta olacak propları seçebilirsiniz.
+
+Requests:
+Burada müşteriler tarafından managament menüsünden gelen istekleri kontrol edebilirsiniz. Kabul ederseniz, istekler gerçekleşir ama eğer red ederseniz, 
+kişiye mail gider ve para iadesi yapılır.
+
+Motel sahibleri ve motel çalışanların bu ekrandan yapabildikleri şimdilik bu kadar, şimdi ise bir otel odası kiralıyalım.
+
+Odaya girdğimiz zaman secili olan duvar rengi ve oda extralarına göre bucket sistemi kullanarak sizi odaya ışınlar.
+
+Odanız da odanın türüne göre stash gardirop ve managemnt özellikleri bulunmakta. Sırası ile hepsine bakalım
+
+//Stash Ekranı
+
+//gardirop Ekranı
+
+// Management kısmı
+
+Management ekranında oda sahibi, kapının yanındaki oyuncuları görebilir ve onları evinde davet edebilir, Oda türüne göre arkadaş ekleme limiti göz önüne alarak kişiyi isterse arkadaş ekleyebilir.
+Alt kısımda odanın bitiş tarihi görebilir ve süresini uzatabilir.
+
+Invite ve Add Friends yaptığınız zaman davet ettiğiniz kişiye kabul etmesi için bir ekran gönderiliyor, kabul ederse yaptığınız işlem başarılı oluyor.
+
+//Invite ve Add Friends invite resmi
+
+Friends ekranın'da karşınıza oda arkadaşları çıkıyor, ve eğer oda sahibiyseniz istediğiniz kişileri oda'dan kovabilirsiniz.
+
+Requests ekranın'da odanız üzerinde belirli işlemleri yapabilirsiniz, onayladığınız zaman bu işleminiz patron menüsünde gösterilen Requests ekranı'da gönderilir. Ve motel sahibi veya çalışanların kararı üzerine motel odanız güncellenir.
+
+// örnek motel care requst resmi videosu
+
+
+
+
+
+
+````

@@ -1,0 +1,732 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <title>oph3z-motels</title>
+</head>
+
+<body>
+    <div class="rent-motel-rooms">
+        <div class="header">
+            <div class="motelisim">
+                <h1 id="motelkonum">LOS SANTOS</h1>
+                <h1 id="motelname">YUCCA MOTEL</h1>
+            </div>
+            <div class="cizgi"></div>
+            <div class="aciklama">
+                <h3 id="motelinformation">MOTEL ROOMS INFORMATION</h3>
+                <span id="mi-description">Fermentum convallis lacus lectus ut. Posuere augue pellentesque elementum a id sit. Tellus adipiscing diam</span>
+            </div>
+            <div class="close">
+                <p id="exit-text-openmenu">EXIT</p>
+                <div class="icon" id="closebro">
+                    <img src="./img/close.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="middlebar">
+            <div class="icon">
+                <img src="./img/zil.svg" alt="" id="zil">
+            </div>
+            <h1 id="motel-rooms-header">motel rooms</h1>
+            <div class="ortabutton">
+                <div class="viprooms">
+                    <span class="viprooms-img-text" id="category-item" name="roomsbar3">
+                        <img src="./img/gray-vip.png" alt="" id="vipimg">
+                        <span class="anan3">VIP Rooms</span>
+                    </span>
+                </div>
+                <div class="middlerooms">
+                    <span class="middlerooms-img-text" id="category-item" name="roomsbar2">
+                        <img src="./img/middle.svg" alt="" id="middleimg">
+                        <span class="anan2">Middle Rooms</span>
+                    </span>
+                </div>
+                <div class="pwodalari badroomclick">
+                    <span class="pwodalar" id="category-item" name="roomsbar">
+                        <img src="./img/black-squatter.png" alt="" id="squatterimg">
+                        <span class="anan badroomclick2" id="ananlar">Squatter's Rooms</span>
+                    </span>
+                </div>
+                <div class="sigtir" name="sigtir" id="category-item"></div>
+            </div>
+            <div class="moteldec">
+                <div class="totalrooms">
+                    <div class="icon">
+                        <img src="./img/door.svg" alt="">
+                        <div class="iconbg"></div>
+                    </div>
+                    <h1 id="totalroomsnumberfalan">30 Rooms</h1>
+                    <p id="total-motel-rooms">Total Motel Rooms</p>
+                </div>
+                <div class="availablerooms">
+                    <div class="icon">
+                        <img src="./img/door.svg" alt="">
+                        <div class="iconbg"></div>
+                    </div>
+                    <h1 id="activeroomsnumberfalan"> 12 Rooms</h1>
+                    <p id="availablemotelrooms">Available Motel Rooms</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="roomsbar" id="scrollolacak">
+            <!-- <div class="rooms">
+                <img src="./img/roomsback.png">
+                <span class="no-text">NO</span>
+                <span class="oda-no">01</span>
+                <span class="room-header">VIP MOTEL ROOM</span>
+                <span class="room-descript">One of the best room with VIP access</span>
+                <div class="rent-button-vip">
+                    <span>Rent</span>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="roomsbar2" id="scrollolacak">
+            <!-- <div class="rooms2">
+                <img src="./img/roomsback.png">
+                <span class="no-text2">NO</span>
+                <span class="oda-no2">01</span>
+                <span class="room-header2">VIP MOTEL ROOM</span>
+                <span class="room-descript2">One of the best room with VIP access</span>
+                <div class="rent-button-vip2">
+                    <span>Rent</span>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="roomsbar3" id="scrollolacak">
+            <!-- <div class="rooms3">
+                <img src="./img/roomsback.png">
+                <span class="no-text3">NO</span>
+                <span class="oda-no3">01</span>
+                <span class="room-header3">VIP MOTEL ROOM</span>
+                <span class="room-descript3">One of the best room with VIP access</span>
+                <div class="rent-button-vip3">
+                    <span>Rent</span>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="bossmenu">
+        <div class="header">
+            <div class="motelisimbossmenu">
+                <h1 id="motelkonumbosmenmu">LOS SANTOS</h1>
+                <h1 id="moteisim">YUCCA MOTEL</h1>
+            </div>
+            <div class="cizgi"></div>
+            <div class="aciklama">
+                <h3 id="bossmenu-motel-information">MOTEL ROOMS INFORMATION</h3>
+                <span id="bossmenu-motel-information-text">Fermentum convallis lacus lectus ut. Posuere augue pellentesque elementum a id sit. Tellus adipiscing diam</span>
+            </div>
+            <div class="close" id="closebro2">
+                <p id="exit-text">EXIT</p>
+                <div class="icon">
+                    <img src="./img/close.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="left-menu">
+            <div class="dashboard" id="left-menu-item">
+                <img src="./img/dashboard-icon.png" class="dashboard-icon">
+                <span id="dashboard-text">Dashboard</span>
+            </div>
+            <div class="employees" id="left-menu-item">
+                <img src="./img/employee-icon.png" class="employee-icon">
+                <span id="employee-textleft">Employees</span>
+            </div>
+            <div class="company" id="left-menu-item">
+                <img src="./img/company-icon.png" class="company-icon">
+                <span id="company-text">Company</span>
+            </div>
+            <div class="customer" id="left-menu-item">
+                <img src="./img/user-icon.png" class="customer-icon">
+                <span id="customer-text">Customers</span>
+            </div>
+            <div class="nearby-players" id="left-menu-item">
+                <img src="./img/nearby-icon.png" class="nearby-icon">
+                <span id="nb-text">Nearby Players</span>
+            </div>
+            <div class="motelcare" id="left-menu-item">
+                <img src="./img/motelcare-icon.png" class="motelcare-icon">
+                <span id="mc-text">Motel care</span>
+            </div>
+            <div class="motelcare2" id="left-menu-item">
+                <img src="./img/motelcare-icon.png" class="motelcare-icon2">
+                <span id="request-text">Requets</span>
+            </div>
+        </div>
+        <div class="dashboardmenu">
+            <h1 id="d-title">DASHBOARD</h1>
+            <div class="d-total-rooms">
+                <span id="total-motel-rooms-text">TOTAL MOTEL ROOMS</span>
+                <p>25 ROOMS</p>
+            </div>
+            <div class="d-available-rooms">
+                <span id="available-motel-rooms-text">AVAILABLE MOTEL ROOMS</span>
+                <p id="openbossmenuactiverooms">12 ROOMS</p>
+            </div>
+            <div class="total-customers">
+                <span id="employee-text">TOTAL EMPLOYESS</span>
+                <p>8 EMPLOYESS</p>
+            </div>
+            <input type="text" id="chancemotelname" placeholder="Motel name...">
+            <input type="number" id="transfermotelid" placeholder="Player ID...">
+            <div class="savebtn" id="dashboardsave">
+                <h4 id="save-text">Save</h4>
+            </div>
+            <div class="savebtn2" id="dashboardsavesel">
+                <h4 id="motel-sell-text">Motel Sell</h4>
+            </div>
+            <div class="savebtn3" id="dashboardsavetransfer">
+                <h4 id="transfer-motel-text">Transfer Motel</h4>
+            </div>
+        </div>
+
+        <div class="employeesmenu">
+            <h1 id="e-title">EMPLOYESS</h1>
+            <div class="e-invitebtn">
+                <h4 id="invite-text">Invite</h4>
+            </div>
+            <div class="e-list-title">
+                <span id="e-name">Name:</span>
+                <span id="e-rank">Rank:</span>
+                <span id="e-salary">Salary:</span>
+                <span id="e-rankud">Rank Up/Down:</span>
+                <span id="e-action">Action:</span>
+            </div>
+            <div class="e-list-body">
+                <div class="e-employees-list">
+                    <h2 id="e-e-l-name">Brenden Randall</h2>
+                    <h2 id="e-e-l-rank">Manager</h2>
+                    <input type="number" id="player-salary" class="player-salaryinput" placeholder="$10,000">
+                    <i class="fa-solid fa-check" id="accept-salary"></i>
+                    <!-- <h2 id="e-e-l-salary">10.000$</h2> -->
+                    <div class="rankdown-icon">
+                        <img src="img/rankdown.svg" alt="" id="rankdown">
+                    </div>
+                    <div class="rankup-icon">
+                        <img src="img/rankup.svg" alt="" id="rankup">
+                    </div>
+                    <div class="action-icon">
+                        <img src="img/kick.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="employee-invite">
+                <span id="employees_invite">EMPLOYEES INVITE</span>
+                <div class="nearby-players-employee">
+                    <!-- <div class="npe-list">
+                        <span>Brenden Randall</span>
+                        <div class="invite-button-npe"> <span>Invite</span> </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="companymenu">
+            <h1 id="d-title" class="companyfalanbarisoropsu">COMPANY</h1>
+            <div class="c-dashboard">
+                <span id="company-balance-text">Company Balance</span>
+                <p>$ 56.540.000</p>
+            </div>
+
+            <div class="withdraw">
+                <span class="w-text">WITHDRAW</span>
+                <input type="number" id="w-amount" placeholder="Amount...">
+                <button id="w-submit">Withdraw</button>
+            </div>
+            <div class="deposit">
+                <span class="d-text">DEPOSIT</span>
+                <input type="number" id="d-amount" placeholder="Amount...">
+                <button id="d-submit">Deposit</button>
+            </div>
+            <div class="company-history">
+                <span class="c-text">COMPANY HISTORY</span>
+                <div class="history">
+                    <div class="h-list">
+                        <img src="./img/money-green.png">
+                        <span>Money has been added to your account.</span>
+                        <p>$30.000.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="customersmenu">
+            <h1 id="c-title">CUSTOMERS</h1>
+            <input type="text" id="search-customers" placeholder="Search customers...">
+            <div class="c-list-title">
+                <span id="c-name">Name:</span>
+                <span id="c-rank">When he rented:</span>
+                <span id="c-salary">Room number:</span>
+                <span id="c-rankud">Money to Pay:</span>
+                <span id="c-phonenumber">Phone Number:</span>
+                <span id="c-action">Action:</span>
+            </div>
+            <div class="c-list-body">
+                <div class="c-customers-list">
+                    <!-- <h2 id="c-c-l-name">Tyler Baris</h2>
+                    <h2 id="c-c-l-date">2023-05-12 22:26:00</h2>
+                    <h2 id="c-c-l-room">1(VIP)</h2>
+                    <h2 id="c-c-l-money">$1</h2>
+                    <h2 id="c-c-l-phone">333-3333</h2>
+                    <div class="c-action-icon">
+                        <img src="img/kick.svg" alt="">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="nearby-players-cat">
+            <h1 id="n-title">NEARBY PLAYERS</h1>
+            <div class="n-list-title">
+                <span id="n-name">Name:</span>
+                <span id="n-action">Action:</span>
+            </div>
+            <div class="n-list-body" id="scrollolacak">
+                <!-- <div class="n-np-list">
+                    <h2 id="n-n-l-name">Brenden Randall</h2>
+                    <div class="invite-button-np"> <span>Invite</span> </div>
+                </div> -->
+            </div>
+            <div class="np-invite-settings">
+                <span class="nis-name-text">Name</span>
+                <span class="nis-name">Brenden Randall</span>
+                <div class="nis-cizgi"></div>
+                <span class="nis-id-text">ID</span>
+                <span class="nis-id">2543</span>
+
+                <span class="nis-chooseroom">Choose a Room</span>
+                <div class="nis-cizgi2"></div>
+                <span class="nis-select">Select</span>
+
+                <div class="nis-rooms" id="scrollolacak">
+                    <div class="nis-rooms-list">
+                        <span class="nrl-text">NO 1 ( VIP )</span>
+                    </div>
+                </div>
+
+                <span class="enterprice">Enter a Price</span>
+                <input type="number" id="nearby-players-settings-price" placeholder="$5000">
+
+                <span class="enterday">Enter a Time (Hour)</span>
+                <input type="number" id="nearby-players-settings-time" placeholder="1 Hour">
+
+                <div class="npc-accept">
+                    <span id="accept-text">Accept</span>
+                </div>
+                <div class="npc-cancel">
+                    <span id="cancel-text">Cancel</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="motel-care-menu">
+            <h1 id="motel-care-header2">MOTEL CARE</h1>
+            <div class="motel-care-room-list" id="motelcare-scrollolacak">
+                <div class="motel-care-rooms">
+                    <img src="./img/motelcare-backrooms.png">
+                    <span class="motel-care-room-header">VIP MOTEL ROOM</span>
+                    <span class="motel-care-room-descript">One of the best room with VIP access</span>
+                    <span class="motel-core-no-text">NO</span>
+                    <span class="motel-core-oda-no">01</span>
+                    <span class="motel-core-level-text">Lvl</span>
+                    <span class="motel-core-oda-level">2</span>
+                    <div class="motel-care-upgrade-button">
+                        <span>Upgrade</span>
+                    </div>
+                </div>
+                <div class="motel-care-rooms">
+                    <img src="./img/motel-care-fixit.png">
+                    <span class="motel-care-room-header">VIP MOTEL ROOM</span>
+                    <span class="motel-care-room-descript">One of the best room with VIP access</span>
+                    <span class="motel-core-fixit-no-text">NO</span>
+                    <span class="motel-core-fixit-no">11</span>
+                    <div class="motel-care-fixit-button">
+                        <span>Fix it</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="motel-care-menu-request">
+            <h1 id="motel-request-text2">Motel Requests</h1>
+            <div class="request-list" id="motelcare-scrollolacak">
+                <!-- <div class="requests">
+                    <img src="" class="barisinbiip">
+                    <span class="r-header">Requests</span>
+                    <span class="requests-text">Theme: Moody -- Extras: Strip, Boze</span>
+                    <div class="r-accept"> <span>Accept</span> </div>
+                    <div class="r-decline"> <span>Decline</span> </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="send-room-soru">
+
+        <div class="motel-name-container-soru">
+            <span class="motelname">Motel Name</span>
+            <span id="motel-name2">Oph3Z Motel</span>
+        </div>
+
+        <div class="motel-name-room-container-soru">
+            <span class="motelroom">Motel Room Number</span>
+            <span id="motel-room2">17 ( VIP )</span>
+        </div>
+
+        <div class="motel-name-time-container-soru">
+            <span class="moteltime">Motel Room Time</span>
+            <input type="number" id="motel-time-input" placeholder="?">
+
+            <span id="motel-time-input-text">0</span>
+        </div>
+
+        <div class="motel-name-price-container-soru">
+            <span class="motelprice">Motel Room Price</span>
+            <span id="motel-price-soru">?</span>
+        </div>
+
+        <div class="sri-accept-soru">
+            <span>Accept</span>
+        </div>
+
+        <div class="sri-decline-soru">
+            <span>Cancel</span>
+        </div>
+    </div>
+    <div class="send-room-invite">
+        <span class="sri-text">BRENDEN RANDALL <span>invites you to rent a motel room</span> </span>
+        <div class="motel-name-container">
+            <span class="motelname">Motel Name</span>
+            <span id="motel-name">Oph3Z Motel</span>
+        </div>
+
+        <div class="motel-name-room-container">
+            <span class="motelroom">Motel Room Number</span>
+            <span id="motel-room">17 ( VIP )</span>
+        </div>
+
+        <div class="motel-name-time-container">
+            <span class="moteltime">Motel Room Time</span>
+            <span id="motel-time">1w 16h</span>
+        </div>
+
+        <div class="motel-name-price-container">
+            <span class="motelprice">Motel Room Price</span>
+            <span id="motel-price">$20.000</span>
+        </div>
+
+        <div id="acceptreqq">
+            <span>Accept</span>
+        </div>
+
+        <div id="closereq">
+            <span>Cancel</span>
+        </div>
+    </div>
+
+    <div class="send-room-invite-door">
+        <span class="sri-text">BRENDEN RANDALL <span>invites you to a motel room</span> </span>
+        <div class="motel-name-container">
+            <span class="motelname">Motel Room Number</span>
+            <span id="motel-name-door"></span>
+        </div>
+
+        <div class="motel-name-room-container">
+            <span class="motelroom">Motel Type</span>
+            <span id="motel-room-door"></span>
+        </div>
+
+        <div id="acceptreqq-door">
+            <span>Accept</span>
+        </div>
+
+        <div id="closereq-door">
+            <span>Cancel</span>
+        </div>
+    </div>
+
+    <div class="send-room-invite-friends">
+        <span class="sri-text">BRENDEN RANDALL<span>He wants to add you friends to a motel room</span> </span>
+        <div class="motel-name-container">
+            <span class="motelname">Motel Name</span>
+            <span id="motel-name-friends"></span>
+        </div>
+
+        <div class="motel-name-room-container">
+            <span class="motelroom">Motel Room Number</span>
+            <span id="motel-room-friends"></span>
+        </div>
+
+        <div id="acceptreqq-friends">
+            <span>Accept</span>
+        </div>
+
+        <div id="closereq-friends">
+            <span>Cancel</span>
+        </div>
+    </div>
+
+    <div class="send-motel-transfer">
+        <span class="sri-text">BRENDEN RANDALL <span>He wants to add you friends to a motel room</span> </span>
+        <div class="motel-name-container-transfer">
+            <span class="motelname">Motel Name</span>
+            <span id="motel-name-transfer"></span>
+        </div>
+
+
+        <div id="acceptreqq-transfer">
+            <span>Accept</span>
+        </div>
+
+        <div id="closereq-transfer">
+            <span>Cancel</span>
+        </div>
+    </div>
+
+    <div class="fix-room-menu">
+        <span class="fixmenu-sri-text">You want to fix motel room number ?</span>
+        <div class="motel-name-container">
+            <span class="fixmenu-motelroom">Motel Room</span>
+            <span id="fixmenu-motel-room">07</span>
+        </div>
+
+        <div class="motel-name-room-container">
+            <span class="fixmenu-motelprice">Motel Fix Price</span>
+            <span id="fixmenu-motel-price">$10.000</span>
+        </div>
+
+        <div class="sri-accept">
+            <span>Accept</span>
+        </div>
+
+        <div class="sri-decline">
+            <span>Cancel</span>
+        </div>
+    </div>
+
+    <div class="chancestyle-motelrooms">
+        <img src="img/upgradesari.svg" alt="">
+
+        <div class="badrooms-upgrade">
+            <img src="./img/pwev.svg" alt="" id="squatterimgupgrade">
+            <span class="text" id="squattertextiste">Squatter's Rooms</span>
+        </div>
+
+        <div class="middlerooms-upgrade" id="motelcare-tiklanma1">
+            <img src="./img/middle.svg" alt="" id="middleimgprade">
+            <span id="falanlarhehe2">Middle Rooms</span>
+        </div>
+        <div class="viprooms-upgrade" id="motelcare-tiklanma2">
+            <img src="./img/gray-vip.png" alt="" id="vipimgupgrade">
+            <span id="falanlarhehe1">VIP Rooms</span>
+        </div>
+
+        <div class="cm-container">
+            <span id="upgrademenu-no-text">NO</span>
+            <span id="upgrademenu-no-number">04</span>
+        </div>
+
+
+        <h1 id="upgrademenu-motelname">VIP MOTEL ROOM</h1>
+        <span id="upgrademenu-title">ROOM UPGRADE</span>
+        <span id="upgrademenu-title2">Choose Style</span>
+        <span id="upgrademenu-title3">Choose Wall</span>
+        <div class="upgrademenu-styleedit">
+            <!-- <div class="upgrademenu-stylebar">
+                <img src="img/upstyle1.png" id="upstyle1" alt="">
+                <div class="selectbtn">
+                    <h5>Select</h5>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="upgrademenu-walledit">
+            <!-- <div class="upgrademenu-wallbar">
+                <img src="img/upwalls.png" id="upwalls1" alt="">
+                <div class="selectbtnwall">
+                    <h5>Select</h5>
+                </div>
+            </div> -->
+        </div>
+        <div class="upgrademenu-button">
+            <div class="up-menu-cancel-btn">
+                <h3 id="up-menu-cancel-txt">Cancel</h3>
+            </div>
+            <div class="up-menu-save-btn">
+                <h3 id="up-menu-save-txt">$50.000</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="motel-isletme-satin-alma-ekrani">
+        <div class="motel-satinalma-sidebar">
+            <h1 id="isletme-motelkonum">MOTEL LOCATION NAME</h1>
+            <span id="isletme-motelname">Baris Motel</span>
+            <span id="isletme-motelaciklama">Fermentum convallis lacus lectus ut. Posuere augue pellentesque elementum a id sit.</span>
+            <div class="isletme-odabilgi-kutu1">
+                <span id="active-motelrooms">Number of active rooms</span>
+                <span id="active-motelrooms-number">10</span>
+            </div>
+
+            <div class="isletme-odabilgi-kutu2">
+                <div id="total-motelrooms">Total of rooms</div>
+                <div id="total-motelrooms-number">16</div>
+            </div>
+
+            <div class="isletme-odabilgi-kutu3">
+                <div id="damaged-motelrooms">Number of damaged rooms</div>
+                <div id="damaged-motelrooms-number">6</div>
+            </div>
+            <h2 id="isletme-price-txt">PRICE</h2>
+            <h3 id="isletme-price">$1.250.000</h3>
+
+        </div>
+        <div class="motel-satinalma-btns">
+            <div class="motel-satinalma-solbtn">
+                <img src="img/Vector.svg" id="motel-satinalma-vector" alt="">
+            </div>
+            <div class="motel-satinalma-motelnumber-txt">
+                <span id="motel-satinalma-bakilannumber">5</span>
+                <span id="motel-satinalma-totalnumber">/7</span>
+            </div>
+            <div class="motel-satinalma-sagbtn">
+                <img src="img/Vector.svg" id="motel-satinalma-vector-ters" alt="">
+            </div>
+            <div class="motel-satinalma-buybtn">
+                <span id="motel-satinalma-buybtn-txt">BUY</span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="send-request">
+        <!-- <span>You received a job offer from the cardealer, do you want to accept it?</span>
+        <div class="accept-offer"> <span>Accept</span> </div>
+        <div class="decline-offer"> <span>Decline</span> </div> -->
+    </div>
+
+    <!-- <div class="send-request2">
+        <span>You where invited to the room by Brenden Randall</span>
+        <div class="accept-offer2"> <span>Accept</span> </div>
+        <div class="decline-offer2"> <span>Decline</span> </div>
+    </div> -->
+
+    <div class="motel-management">
+        <h1 id="managementheader">Management</h1>
+        <div class="mm-cizgi"></div>
+        <div class="management-nearby emrelutfisagolsun" name="tamam" id="management-button">
+            <span id="nearbyplayersh">Nearby Players</span>
+        </div>
+        <div class="management-friends" name="tamam" id="management-button">
+            <span id="friendsheader">Friends</span>
+        </div>
+        <div class="management-requests">
+            <span id="requestheader">Requests</span>
+        </div>
+        <div class="mm-ikincicizgi"></div>
+
+        <div class="mm-nearby-players">
+            <span id="nearbyplayersh">Nearby Players</span>
+            <div class="mnp-players">
+                <div class="playersiste">
+                    <span>Brenden Randall</span>
+                    <div class="pi-add"> <span>Add Friend</span> </div>
+                    <div class="pi-invite"> <span>Invite Friends</span> </div>
+                </div>
+            </div>
+        </div>
+        <div class="mm-friends">
+            <span id="friendsheader">Friends</span>
+            <div class="mf-players">
+                <div class="playersiste2">
+                    <span>Brenden Randall</span>
+                    <div class="pi-kick"> <span>Kick</span> </div>
+                </div>
+            </div>
+        </div>
+        <div class="time-update">
+            <span class="time-left">Deadline: 18.05.2023 17:00</span>
+            <input type="number" class="new-time">
+            <span class="tu-price">$0</span>
+        </div>
+        <div class="mm-save"> <span>Save</span> </div>
+    </div>
+
+    <div class="chancestyle-motelroomsrequest">
+        <img src="img/upgradesari.svg" alt="">
+
+        <div class="badrooms-upgraderequest">
+            <img src="./img/pwev.svg" alt="" id="squatterimgupgraderequest">
+            <span class="text" id="squattertextisterequst">Squatter's Rooms</span>
+        </div>
+
+        <div class="middlerooms-upgraderequest" id="motelcare-tiklanma1">
+            <img src="./img/middle.svg" alt="" id="middleimgpraderequest">
+            <span id="middleroomslowertext">Middle Rooms</span>
+        </div>
+        <div class="viprooms-upgraderequest" id="motelcare-tiklanma2">
+            <img src="./img/gray-vip.png" alt="" id="vipimgupgraderequest">
+            <span id="viproomslowertext">VIP Rooms</span>
+        </div>
+
+        <div class="cm-containerrequest">
+            <span id="upgrademenu-no-textrequest">NO</span>
+            <span id="upgrademenu-no-numberrequest">04</span>
+        </div>
+        
+        <h1 id="upgrademenu-motelnamerequest">VIP MOTEL ROOM</h1>
+        <span id="upgrademenu-titlerequest">ROOM UPGRADE</span>
+        <span id="upgrademenu-title2request">Choose Style</span>
+        <span id="upgrademenu-title3request">Choose Extra</span>
+        <div class="upgrademenu-styleeditrequest">
+            <!-- <div class="upgrademenu-stylebarrequest">
+                <img src="img/upstyle1.png" id="upstyle1request" alt="">
+                <div class="selectbtnrequestrequest">
+                    <h5>Select</h5>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="upgrademenu-walleditrequest">
+            <!-- <div class="upgrademenu-wallbarrequest">
+                <img src="img/upwalls.png" id="upwalls1request" alt="">
+                <div class="selectbtnwallrequest">
+                    <h5>Select</h5>
+                </div>
+            </div> -->
+        </div>
+        <div class="upgrademenu-buttonrequest">
+            <div class="up-menu-cancel-btnrequest">
+                <h3 id="up-menu-cancel-txtrequest">Cancel</h3>
+            </div>
+            <div class="up-menu-save-btnrequest">
+                <h3 id="up-menu-save-txtrequest">$0</h3>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
